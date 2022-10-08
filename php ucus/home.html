@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Sadece Uç | Anasayfa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href="css/home.css">
+  <script src = "js/home.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"  class="shortPage">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="home.html"><img src="images/logo.png" alt="JustFly"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="home.html">Anasayfa</a></li>
+        <li><a href="viewFlights.php">Uçuşlar</a></li>
+        <li><a href="viewReservations.php">Rezervasyonlar</a></li>
+        <li><a href="loginPage.php">Giriş Yap</a></li>
+        <li><a href="signUp.html">Kayıt Ol</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+<form action="viewFlights.php">
+<div class="container">
+   
+
+  <h1>Sadece Uç</h1>
+  <p>Nereye uçmak isterdin?</p>
+  
+    <label class="radio-inline">
+      <input type="radio" name="optradio" value="roundtrip">Gidiş Dönüş
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" value="oneway">Tek Yön
+    </label>
+  
+</div>
+  <br>
+    	 
+<div class="form-inline" >
+  <select name="Guests" class="form-control"  placeholder="Misafir" required>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+	
+
+ </select>
+
+	  
+	  <label>Nereden</label>
+   <select name="From" class="form-control" placeholder="Nereden" required>
+     <option value="Istanbul">Istanbul</option>
+    <option value="Ankara">Ankara</option>
+    <option value="Mersin">Mersin</option>
+    <option value="Antalya">Antalya</option>
+	<option value="Samsun">Samsun</option>
+	<option value="Erzurum">Erzurum</option>
+	
+  </select>
+  
+  	  <label>Nereye</label>
+
+   <select name="To" class="form-control"  placeholder="Nereye" required>
+ <option value="Antalya">Antalya</option>
+    <option value="Ankara">Ankara</option>
+    <option value="Erzurum">Erzurum</option>
+    <option value="Trabzon">Trabzon</option>
+	<option value="Samsun">Samsun</option>
+	<option value="Istanbul">Istanbul</option>
+	<option value="Mersin">Mersin</option>
+
+
+  </select>
+  <br>
+  <br>
+  <button type="submit" class="btn btn-danger" style="width=100px;">Uçuş Ara</button>
+</div>
+</form>
+</div>
+
+  <!-- Container (login Section) -->
+<div style="background-image: url('images/flighttoindia.png'); background-size: cover; background-repeat:no-repeat;">
+<form action = "login.php" method = "post">
+<div id="login" class="container-fluid" >
+  <div class="row" >
+        <div class="col-sm-2 form-group">
+			<div class="row">
+			  <h2 class="text-center">Giriş Yap</h2>
+			</div>
+			<div class="row">
+			  <input class="form-control" id="username" name="username" placeholder="Email Adresiniz" type="text" required>
+			</div></br>
+            <div class="row">
+			  <input class="form-control" id="password" name="password" placeholder="Şifreniz" type="password" required>
+			</div>
+        </div>
+		<div class = "col-sm-8" style="padding-left:60px">
+		<h4><strong>Misyonumuz:</strong><ul><li>Minimum fiyata maksimum hizmet sağlamak</li>
+					<li>Dünyanın her noktasına uçuş imkanı sağlamak </li>
+					<li>Seferlerimizde müthiş ikramlar sağlamak ve Teknolojiyi sonuna kadar kullanmak</li>
+					<li>Taklitçilikden uzak Yenilikler sağlamak</li></ul></h4>
+		</div>
+		
+      </div>
+      <div class="row">
+        <div class="col-sm-2 form-group">
+          <button class="btn btn-default pull-right" type="submit">Giriş Yap</button>
+        </div>
+      </div>
+    </div>
+</form>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>&copy; Sadece Uç || Tüm hakları saklıdır. </p>
+</footer>
+</div>
+</body>
+</html>
+
